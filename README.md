@@ -3,4 +3,5 @@
 [Руководство по настройке Webpack](https://webpack.js.org/guides/)
 [Руководство по настройке GitHub Actions](https://docs.github.com/en/actions/quickstart)
 
-![CI](https://github.com/EllinaRoman/popovers/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/EllinaRoman/trello/actions/workflows/web.yml/badge.svg)
+https://ellinaroman.github.io/trello/
