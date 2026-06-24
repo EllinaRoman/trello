@@ -132,19 +132,19 @@ document.addEventListener("dragover", (e) => {
   }
   const cards = column.querySelectorAll(".card");
 
-  cards.forEach((el) => {
-    const card = el;
-    if (el && el !== draggedCard) {
+  for (const el of cards) {
+    if (el !== draggedCard) {
       const rect = el.getBoundingClientRect();
       const midY = rect.top + rect.height / 2;
 
       if (e.clientY < midY) {
         column.insertBefore(draggedCard, el);
+        break;
       } else {
         column.insertBefore(draggedCard, el.nextSibling);
       }
     }
-  });
+  }
   if (cards.length === 0) {
     column.insertBefore(draggedCard, column.querySelector(".add"));
   }

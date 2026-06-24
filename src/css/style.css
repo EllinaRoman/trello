@@ -41,11 +41,11 @@ body {
 
 .delete {
   font-size: 17px;
-  visibility: hidden
+  visibility: hidden;
 }
 
 .card:hover .delete {
-  visibility: visible
+  visibility: visible;
 }
 
 .new-card {
@@ -100,6 +100,7 @@ body {
   background-color: rgb(209, 209, 219);
   color: transparent;
   box-shadow: none;
+  cursor: grabbing !important;
 }
 
 .dragged .delete {
